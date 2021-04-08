@@ -6,6 +6,7 @@ pipeline {
                 sh 'mvn --version'
                 sh '''
                 	echo "Multiline shell steps works too."
+                	pwd
                 	ls -lah
                 '''
             }
