@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mapfile -t indexed_array < planets.txt
+mapfile -t indexed_array < ./planets.txt
 
 for index in ${!indexed_array[*]}
 do
