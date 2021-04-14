@@ -1,6 +1,7 @@
 #!/bin/bash
 
-declare -a indexed_array=("Hydrogen" "Helium" "Lithium" "Beryllium")
+mapfile -t indexed_array < planets.txt
+
 for index in ${!indexed_array[*]}
 do
 echo "["$index"]:["${indexed_array[$index]}"]"
